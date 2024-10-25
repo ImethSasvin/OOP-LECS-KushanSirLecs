@@ -1,0 +1,45 @@
+package com.iit.oop.week4.Week5Arrays;
+
+import java.util.ArrayList;
+
+public class CollectionsExample {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<String> list2 =  new ArrayList<String>();
+
+
+        list1.add(5);
+        list1.add(10);
+        list1.add(15);
+        list1.add(20);
+        list1.add(25);
+
+
+        System.out.println(list1);
+
+        list1.remove(2);
+
+        list2.add("Hello");
+        list2.add("World");
+        list2.add("Java");
+        list2.add("Programming");
+
+
+
+
+        for(int i= 0; i<list1.size(); i++){
+            System.out.print(list1.get(i)+" ");
+        }
+
+        System.out.println();
+
+
+        System.out.println(list2);
+
+
+
+
+
+    }
+}

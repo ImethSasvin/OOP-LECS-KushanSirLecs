@@ -27,6 +27,8 @@ public class ArrayExample {
         System.out.println(Arrays.toString(scoresDouble));
         System.out.println(Arrays.toString(nums));
 
+        printArray(scoresDouble);
+
 //        try{
 //            for (int j =0 ; j<scoresDouble.length; j++)
 //                System.out.print(scoresInt[j]+" ");
@@ -36,7 +38,7 @@ public class ArrayExample {
 //        }
     }
 
-    public static void printArray(int [] scoresDouble){
+    public static void printArray(double [] scoresDouble){
         try{
             for (int j =0 ; j<scoresDouble.length; j++)
                 System.out.print(scoresDouble[j]+" ");
