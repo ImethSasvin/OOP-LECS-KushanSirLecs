@@ -17,19 +17,20 @@ public class CollectionsExample {
 
 
         System.out.println(list1);
-
+        list1.set(3, 30);
         list1.remove(2);
 
         list2.add("Hello");
         list2.add("World");
         list2.add("Java");
         list2.add("Programming");
-
+        System.out.println("Index of 10 is: "+list1.indexOf(10));
 
 
 
         for(int i= 0; i<list1.size(); i++){
-            System.out.print(list1.get(i)+" ");
+//            System.out.print(list1.get(i)+" ");
+            System.out.println(i);
         }
 
         try{
