@@ -32,6 +32,12 @@ public class CollectionsExample {
             System.out.print(list1.get(i)+" ");
         }
 
+        try{
+            System.out.println(list1.get(3));
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Index out of bounds");
+        }
+
         System.out.println();
 
 
