@@ -1,46 +1,48 @@
-package com.iit.oop.week4.DesignPatterns;
+package com.iit.oop.week4.designPatterns;
 
 public class Singleton {
     private static Singleton instance;
-
     private String name;
     private String age;
 
-
-    private Singleton(){
-
+    private Singleton() {
+        super();
     }
 
-
     /**
-     * This method is used to create a single instance of the class
-     * @return instance
+     * Get instance method for the Singleton class
+     *
+     * @return singleton object
      */
-
-    public static Singleton getInstance(){
-        if(instance == null){
+    public static Singleton getInstance() {
+        if(instance == null) {
             instance = new Singleton();
         }
+
         return instance;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setAge(String age){
-        this.age = age;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getAge(){
+
+    public String getAge() {
         return age;
     }
 
-    public String toString(){
-        return "Name: "+name+" Age: "+age;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "Singleton{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
+    }
 }
